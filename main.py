@@ -8,7 +8,6 @@ def print_todos():
         for index, item in enumerate(todos):
             print(f"{index}: {item}")
 
-
 def create_todo():
     try:
         userInput = input("Enter your todo: ")
@@ -47,11 +46,11 @@ def main():
         option = selected_option.upper()
         if option == "S":
             print_todos()
-        if option == "A":
+        elif option == "A":
             create_todo()
-        if option == "D":
+        elif option == "D":
             delete_todo()
-        if option == "E":
+        elif option == "E":
             print("Have a great day!")
             exit()
         else:
