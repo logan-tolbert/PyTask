@@ -10,11 +10,11 @@ def print_todos():
 
 def create_todo():
     try:
-        userInput = input("Enter your todo: ")
-        if userInput == "":
+        user_input = input("Enter your todo: ")
+        if user_input == "":
             raise ValueError("Input cannot be empty")
-        todos.append(userInput)
-        print(f"'{userInput}' added to your todos.\n")
+        todos.append(user_input)
+        print(f"'{user_input}' added to your todos.\n")
     except ValueError as e:
         print(e)
 
